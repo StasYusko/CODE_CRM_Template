@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Personnel</title>
+    <title>Students</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -80,8 +80,8 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="minimize-it">
-                        <a href="StudentInfo.html" >
-                            <img class="img-size-vsm" alt="Vasyl Zaratustra" src="img/default.avatar.png" />
+                        <a href="StudentInfo.html">
+                            <img class="img-size-vsm" alt="Vasyl Zaratustra" src="img/default.avatar.png"/>
                             Vasyl Zaratustra
                         </a>
                     </li>
@@ -104,185 +104,126 @@
     <div class="row padding-bot">
         <div class="container-fluid">
             <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="page-header">Students</h1>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3>Information about personnel</h3>
+                            All students
                         </div>
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="col-sm-6">
-                                        <label for="sortby">Sort by:</label>
+                                        Sort by:
+                                        <label>
+                                            <select class="form-control input-sm">
+                                                <option>First Name</option>
+                                                <option>Last Name</option>
+                                                <option>Age</option>
+                                                <option>Group</option>
+                                                <option>Teacher</option>
+                                                <option>Language</option>
+                                                <option>Registration Date</option>
+                                            </select>
+                                        </label>
                                     </div>
                                     <div class="col-sm-6">
-                                        <select class="form-control" id="sortby">
-                                            <option></option>
-                                            <option>First Name</option>
-                                            <option>Last Name</option>
-                                            <option>Personnel Role</option>
-                                            <option>Registration Date</option>
-                                            <option>Age</option>
-                                            <option>Status</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="col-sm-6">
-                                        <label for="roles">Personnel's Role:</label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <select class="form-control" id="roles">
-                                            <option></option>
-                                            <option>ADMIN</option>
-                                            <option>MANAGER</option>
-                                            <option>TEACHER</option>
-                                        </select>
+                                        <!--Nothing here by now-->
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="col-sm-6">
-                                        <label for="status">Status:</label>
+
                                     </div>
                                     <div class="col-sm-6">
-                                        <select class="form-control" id="status">
-                                            <option></option>
-                                            <option>ACTIVE</option>
-                                            <option>DELETED</option>
-                                            <option>BLOCKED</option>
-                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="col-sm-6">
+
+                                    </div>
+                                    <div class="col-sm-6">
+
                                     </div>
                                 </div>
                             </div>
-                        <!--<div class="clearfix padding-bot"></div>-->
+                            <!--<div class="clearfix padding-bot"></div>-->
                             <div class="col-sm-12">
                                 <table class="table table-bordered">
                                     <thead>
                                     <tr>
                                         <th>Full Name</th>
-                                        <th>Login</th>
-                                        <th>Status</th>
-                                        <th>Reg. Date</th>
-                                        <th>Mod. Date</th>
-                                        <th>Last login</th>
+                                        <th>Group</th>
+                                        <th>Teacher</th>
                                         <th>Age</th>
-                                        <th>Email</th>
-                                        <th>Role</th>
+                                        <th>Language</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <th>Strange J..</th>
-                                        <th><a href="TeacherInfo.html">jojoaa</a></th>
-                                        <th>active</th>
-                                        <th>Jan 01, 2016</th>
-                                        <th>Jan 01, 2016</th>
-                                        <th>Nov 30, 2016</th>
-                                        <th>24</th>
-                                        <th>jojoishere@jojo.com</th>
-                                        <th>teacher</th>
+                                        <th><a href="StudentInfo.html">Malkovich I.I.</a> </th>
+                                        <th><a href="GroupInfo.html">OCT-16-2016-EN</a> </th>
+                                        <th><a href="TeacherInfo.html">Strange</a> </th>
+                                        <th>25</th>
+                                        <th>English, Italian</th>
                                     </tr>
                                     <tr>
-                                        <th>Johnson J.O.</th>
-                                        <th><a href="ManagerInfo.html">johnjohn</a></th>
-                                        <th>active</th>
-                                        <th>Aug 24, 2016</th>
-                                        <th>Aug 24, 2016</th>
-                                        <th>Nov 30, 2016</th>
-                                        <th>28</th>
-                                        <th>johnsjohhn@yo.com</th>
-                                        <th>manager</th>
+                                        <th><a href="StudentInfo.html">Malkovich I.I.</a> </th>
+                                        <th><a href="GroupInfo.html">OCT-16-2016-EN</a> </th>
+                                        <th><a href="TeacherInfo.html">Strange</a> </th>
+                                        <th>25</th>
+                                        <th>English, Italian</th>
                                     </tr>
                                     <tr>
-                                        <th>Vasyl Z.I.</th>
-                                        <th>vaszar1</th>
-                                        <th>active</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Nov 30, 2016</th>
-                                        <th>78</th>
-                                        <th>vasyl1964@mail.nowhere</th>
-                                        <th>admin</th>
+                                        <th><a href="StudentInfo.html">Malkovich I.I.</a> </th>
+                                        <th><a href="GroupInfo.html">OCT-16-2016-EN</a> </th>
+                                        <th><a href="TeacherInfo.html">Strange</a> </th>
+                                        <th>25</th>
+                                        <th>English, Italian</th>
                                     </tr>
                                     <tr>
-                                        <th>Vasyl Z.I.</th>
-                                        <th>vaszar1</th>
-                                        <th>active</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Nov 30, 2016</th>
-                                        <th>78</th>
-                                        <th>vasyl1964@mail.nowhere</th>
-                                        <th>admin</th>
+                                        <th><a href="StudentInfo.html">Malkovich I.I.</a> </th>
+                                        <th><a href="GroupInfo.html">OCT-16-2016-EN</a> </th>
+                                        <th><a href="TeacherInfo.html">Strange</a> </th>
+                                        <th>25</th>
+                                        <th>English, Italian</th>
                                     </tr>
                                     <tr>
-                                        <th>Vasyl Z.I.</th>
-                                        <th>vaszar1</th>
-                                        <th>active</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Nov 30, 2016</th>
-                                        <th>78</th>
-                                        <th>vasyl1964@mail.nowhere</th>
-                                        <th>admin</th>
+                                        <th><a href="StudentInfo.html">Malkovich I.I.</a> </th>
+                                        <th><a href="GroupInfo.html">OCT-16-2016-EN</a> </th>
+                                        <th><a href="TeacherInfo.html">Strange</a> </th>
+                                        <th>25</th>
+                                        <th>English, Italian</th>
                                     </tr>
                                     <tr>
-                                        <th>Vasyl Z.I.</th>
-                                        <th>vaszar1</th>
-                                        <th>active</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Nov 30, 2016</th>
-                                        <th>78</th>
-                                        <th>vasyl1964@mail.nowhere</th>
-                                        <th>admin</th>
+                                        <th><a href="StudentInfo.html">Malkovich I.I.</a> </th>
+                                        <th><a href="GroupInfo.html">OCT-16-2016-EN</a> </th>
+                                        <th><a href="TeacherInfo.html">Strange</a> </th>
+                                        <th>25</th>
+                                        <th>English, Italian</th>
                                     </tr>
                                     <tr>
-                                        <th>Vasyl Z.I.</th>
-                                        <th>vaszar1</th>
-                                        <th>active</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Nov 30, 2016</th>
-                                        <th>78</th>
-                                        <th>vasyl1964@mail.nowhere</th>
-                                        <th>admin</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Vasyl Z.I.</th>
-                                        <th>vaszar1</th>
-                                        <th>active</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Nov 30, 2016</th>
-                                        <th>78</th>
-                                        <th>vasyl1964@mail.nowhere</th>
-                                        <th>admin</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Vasyl Z.I.</th>
-                                        <th>vaszar1</th>
-                                        <th>active</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Nov 30, 2016</th>
-                                        <th>78</th>
-                                        <th>vasyl1964@mail.nowhere</th>
-                                        <th>admin</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Vasyl Z.I.</th>
-                                        <th>vaszar1</th>
-                                        <th>active</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Sep 16, 2016</th>
-                                        <th>Nov 30, 2016</th>
-                                        <th>78</th>
-                                        <th>vasyl1964@mail.nowhere</th>
-                                        <th>admin</th>
+                                        <th><a href="StudentInfo.html">Malkovich I.I.</a> </th>
+                                        <th><a href="GroupInfo.html">OCT-16-2016-EN</a> </th>
+                                        <th><a href="TeacherInfo.html">Strange</a> </th>
+                                        <th>25</th>
+                                        <th>English, Italian</th>
                                     </tr>
                                     </tbody>
                                 </table>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        Pagination
+                                    </div>
+                                    <div class="col-sm-6">
+                                        Numbers of Pagination
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -290,17 +231,13 @@
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3>Tool's Panel</h3>
+                            Tool's Panel
                         </div>
                         <div class="panel-body">
-                            <h4>Add person</h4>
+                            <h4>Some tools</h4>
                             <p>
-                                <button class="btn btn-success" type="button">Add Admin</button>
-                                <button class="btn btn-success" type="button">Add Manager</button>
-                                <button class="btn btn-success" type="button">Add Teacher</button>
+                                <button class="btn btn-success" type="button">Add Student</button>
                             </p>
-                            <h4>Some Statiistics</h4>
-                            <p>In development</p>
                         </div>
                     </div>
                 </div>
