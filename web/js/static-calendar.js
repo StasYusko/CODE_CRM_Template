@@ -12,7 +12,7 @@ $(document).ready(function() {
         },
         defaultDate: '2016-12-11',
         navLinks: true,
-        editable: false,
+        editable: true,
         eventLimit: true,
         firstDay: 1,
         // locale: 'ru',
