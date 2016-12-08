@@ -20,7 +20,7 @@
 
 
 <!--Main Menu-->
-<div id="wrapper">
+<div>
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -80,8 +80,8 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="minimize-it">
-                        <a href="StudentInfo.html" >
-                            <img class="img-size-vsm" alt="Vasyl Zaratustra" src="img/default.avatar.png" />
+                        <a href="StudentInfo.html">
+                            <img class="img-size-vsm" alt="Vasyl Zaratustra" src="img/default.avatar.png"/>
                             Vasyl Zaratustra
                         </a>
                     </li>
@@ -101,7 +101,7 @@
 
 <!--Authentication credentials-->
 <div class="container-fluid">
-    <div class="row padding-bot">
+    <div class="row">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
@@ -116,50 +116,46 @@
                         </div>
                         <div class="panel-body">
                             <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="col-sm-6">
-                                        <label for="sortby">Sort by:</label>
+                                <div class="col-sm-12">
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">Sort by:</span>
+                                            <select class="form-control">
+                                                <option></option>
+                                                <option>First Name</option>
+                                                <option>Last Name</option>
+                                                <option>Personnel Role</option>
+                                                <option>Registration Date</option>
+                                                <option>Age</option>
+                                                <option>Status</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <select class="form-control" id="sortby">
-                                            <option></option>
-                                            <option>First Name</option>
-                                            <option>Last Name</option>
-                                            <option>Personnel Role</option>
-                                            <option>Registration Date</option>
-                                            <option>Age</option>
-                                            <option>Status</option>
-                                        </select>
+                                    <div class="col-sm-4    ">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">Personnel's Role:</span>
+                                            <select class="form-control">
+                                                <option></option>
+                                                <option>ADMIN</option>
+                                                <option>MANAGER</option>
+                                                <option>TEACHER</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="col-sm-6">
-                                        <label for="roles">Personnel's Role:</label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <select class="form-control" id="roles">
-                                            <option></option>
-                                            <option>ADMIN</option>
-                                            <option>MANAGER</option>
-                                            <option>TEACHER</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="col-sm-6">
-                                        <label for="status">Status:</label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <select class="form-control" id="status">
-                                            <option></option>
-                                            <option>ACTIVE</option>
-                                            <option>DELETED</option>
-                                            <option>BLOCKED</option>
-                                        </select>
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">Status:</span>
+                                            <select class="form-control">
+                                                <option></option>
+                                                <option>ACTIVE</option>
+                                                <option>DELETED</option>
+                                                <option>BLOCKED</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        <!--<div class="clearfix padding-bot"></div>-->
+                            <div class="padding-bot"></div>
                             <div class="col-sm-12">
                                 <table class="table table-bordered">
                                     <thead>
