@@ -15,6 +15,13 @@
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="stylesheet" href="calendar/fullcalendar.css"/>
+    <script src="calendar/lib/jquery.min.js"></script>
+    <script src="calendar/lib/moment.min.js"></script>
+    <script src="calendar/fullcalendar.js"></script>
+    <script src="js/calendar.js"></script>
+
 </head>
 <body>
 
@@ -104,93 +111,109 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Information about Group
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <strong>Information about Group</strong>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <strong>Group Name:</strong>OCT-16-2016-EN
+                            </p>
+                            <p>
+                                <strong>Group Teacher:</strong><a href="TeacherInfo.html">Strange</a>
+                            </p>
+                            <p>
+                                <strong>Studying Language:</strong>English
+                            </p>
+                            <p>
+                                <strong>Common Schedule:</strong>Tue(18:00-20:00), Wed(18:00-20:00),Sun(12:00-14:00)
+                            </p>
+                            <p>
+                                <strong>Students:</strong>
+                            </p>
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>Age</th>
+                                    <th>Language</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
+                                    <th>25</th>
+                                    <th>English, Italian</th>
+                                </tr>
+                                <tr>
+                                    <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
+                                    <th>25</th>
+                                    <th>English, Italian</th>
+                                </tr>
+                                <tr>
+                                    <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
+                                    <th>25</th>
+                                    <th>English, Italian</th>
+                                </tr>
+                                <tr>
+                                    <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
+                                    <th>25</th>
+                                    <th>English, Italian</th>
+                                </tr>
+                                <tr>
+                                    <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
+                                    <th>25</th>
+                                    <th>English, Italian</th>
+                                </tr>
+                                <tr>
+                                    <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
+                                    <th>25</th>
+                                    <th>English, Italian</th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <div class="panel-body">
-                    <p>
-                        <strong>Group Name:</strong>OCT-16-2016-EN
-                    </p>
-                    <p>
-                        <strong>Group Teacher:</strong><a href="TeacherInfo.html">Strange</a>
-                    </p>
-                    <p>
-                        <strong>Studying Language:</strong>English
-                    </p>
-                    <p>
-                        <strong>Common Schedule:</strong>Tue(18:00-20:00), Wed(18:00-20:00),Sun(12:00-14:00)
-                    </p>
-                    <p>
-                        <strong>Students:</strong>
-                    </p>
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th>Full Name</th>
-                            <th>Age</th>
-                            <th>Language</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
-                            <th>25</th>
-                            <th>English, Italian</th>
-                        </tr>
-                        <tr>
-                            <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
-                            <th>25</th>
-                            <th>English, Italian</th>
-                        </tr>
-                        <tr>
-                            <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
-                            <th>25</th>
-                            <th>English, Italian</th>
-                        </tr>
-                        <tr>
-                            <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
-                            <th>25</th>
-                            <th>English, Italian</th>
-                        </tr>
-                        <tr>
-                            <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
-                            <th>25</th>
-                            <th>English, Italian</th>
-                        </tr>
-                        <tr>
-                            <th><a href="StudentInfo.html">Malkovich I.I.</a></th>
-                            <th>25</th>
-                            <th>English, Italian</th>
-                        </tr>
-                        </tbody>
-                    </table>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Tools
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <button class="btn btn-success" type="button">Add Student</button>
+                                <button class="btn btn-warning" type="button">Change Teacher</button>
+                                <button class="btn btn-danger" type="button">Close Group</button>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Tools
-                </div>
-                <div class="panel-body">
-                    <p>
-                        <button class="btn btn-success" type="button">Add Student</button>
-                        <button class="btn btn-warning" type="button">Change Teacher</button>
-                        <button class="btn btn-danger" type="button">Close Group</button>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Here goes calendar for group-->
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="fa-calendar">
 
+    <!--Here goes calendar for group-->
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <strong>Group's Schedule</strong>
+                        </div>
+                        <div class="panel-body">
+                            <div id="calendar"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 </body>
 </html>
