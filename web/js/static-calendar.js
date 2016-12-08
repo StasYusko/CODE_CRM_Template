@@ -14,6 +14,8 @@ $(document).ready(function() {
         navLinks: true,
         editable: false,
         eventLimit: true,
+        firstDay: 1,
+        // locale: 'ru',
         events: [
             {
                 id: 1,
